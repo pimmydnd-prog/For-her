@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Gwapa ♡</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Georgia,'Times New Roman',serif;background:radial-gradient(circle at 50% 35%,#fff8fb 0,#fce8f0 38%,#f5d4df 100%);color:#5b2437;overflow-x:hidden}
+body{min-height:100vh}
+.floating{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.float{position:absolute;white-space:nowrap;font-family:cursive;font-size:15px;color:rgba(139,42,76,.45);animation:fly linear infinite}
+@keyframes fly{from{transform:translate3d(-15vw,110vh,0) rotate(-8deg)}to{transform:translate3d(115vw,-15vh,0) rotate(12deg)}}
+.wrap{position:relative;z-index:2;min-height:100vh;padding:28px 16px 48px;text-align:center}
+h1{font-size:34px;margin:12px 0 4px;letter-spacing:.5px}
+.sub{margin:0 auto 24px;font-size:15px;opacity:.75}
+.flower-wrap{width:min(92vw,390px);height:min(92vw,390px);max-height:390px;margin:12px auto 18px;position:relative}
+.flower{position:absolute;left:50%;top:50%;width:0;height:0}
+.petal{position:absolute;left:-53px;top:-110px;width:106px;height:150px;border:0;background:linear-gradient(145deg,#fff,#f6a9c2 62%,#df6c96);border-radius:58% 58% 52% 52%;transform-origin:53px 110px;box-shadow:0 8px 20px rgba(115,31,63,.15);cursor:pointer;transition:.25s;transform:rotate(var(--r)) translateY(-4px)}
+.petal:hover{filter:brightness(1.05);box-shadow:0 10px 24px rgba(115,31,63,.25)}
+.petal span{display:block;width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.38);position:absolute;top:25px;left:42px}
+.p1{--r:0deg}.p2{--r:51.43deg}.p3{--r:102.86deg}.p4{--r:154.29deg}.p5{--r:205.72deg}.p6{--r:257.15deg}.p7{--r:308.58deg}
+.center{position:absolute;left:-55px;top:-55px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle,#ffeab0 0,#f6c86e 60%,#d99b42 100%);box-shadow:0 5px 20px rgba(100,60,10,.2);display:grid;place-items:center;font-size:24px;z-index:3}
+.hint{font-size:14px;opacity:.7;margin-bottom:16px}
+#message{min-height:145px;max-width:390px;margin:0 auto 18px;padding:18px;border-radius:22px;background:rgba(255,255,255,.68);backdrop-filter:blur(8px);box-shadow:0 8px 30px rgba(96,29,52,.1)}
+#message .msg{font-size:20px;line-height:1.45;font-weight:600}
+#message .small{font-size:12px;opacity:.6;margin-top:8px}
+.memory-card{display:none}
+.photo-box{width:min(82vw,310px);margin:14px auto 0;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(80,25,45,.15)}
+.photo-box img,.photo img{width:100%;height:auto;display:block}
+#photo{margin-top:14px}
+.controls{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:12px 0}
+a.control{display:inline-block;text-decoration:none;color:#fff;background:#9b3c61;padding:11px 16px;border-radius:999px;font-family:Arial,sans-serif;font-size:13px}
+.note{font-family:Arial,sans-serif;font-size:11px;opacity:.55;max-width:360px;margin:18px auto}
+</style>
+</head>
+<body>
+<div class="floating" aria-hidden="true">
+  <span class="float" style="left:2%;animation-duration:15s;animation-delay:-2s">iloveyousomuch inday ♡</span>
+  <span class="float" style="left:25%;animation-duration:19s;animation-delay:-9s">iloveyousomuch inday ♡</span>
+  <span class="float" style="left:55%;animation-duration:17s;animation-delay:-5s">iloveyousomuch inday ♡</span>
+  <span class="float" style="left:78%;animation-duration:21s;animation-delay:-14s">iloveyousomuch inday ♡</span>
+</div>
+
+<main class="wrap">
+  <h1>For My Gwapa ♡</h1>
+  <p class="sub">Pick a petal. I left a little something for you on each one.</p>
+
+  <div class="flower-wrap">
+    <div class="flower">
+      
+      <button class="petal p1" data-message="Hi Gwapa" data-photo="1" aria-label="Petal 1">
+        <span></span>
+      </button>
+      <button class="petal p2" data-message="Iloveyou sa tanang way na akong nabal an even sa ways na di ma reach sakong mind" data-photo="2" aria-label="Petal 2">
+        <span></span>
+      </button>
+      <button class="petal p3" data-message="You know unsa ka kapalangga sa akua" data-photo="3" aria-label="Petal 3">
+        <span></span>
+      </button>
+      <button class="petal p4" data-message="I will always love youu" data-photo="4" aria-label="Petal 4">
+        <span></span>
+      </button>
+      <button class="petal p5" data-message="Abi nimo last petal na?" data-photo="5" aria-label="Petal 5">
+        <span></span>
+      </button>
+      <button class="petal p6" data-message="Dili paa!!!" data-photo="6" aria-label="Petal 6">
+        <span></span>
+      </button>
+      <button class="petal p7" data-message="Iloveyousomuch dai mwaa" data-photo="7" aria-label="Petal 7">
+        <span></span>
+      </button>
+      <div class="center">♡</div>
+    </div>
+  </div>
+
+  <div class="hint">Tap the petals one by one 🌸</div>
+
+  <section id="message" aria-live="polite">
+    <div class="msg">Start with any petal, gwapa.</div>
+    <div class="small">— John</div>
+    <div id="photo"></div>
+  </section>
+
+  <div class="controls">
+    <a class="control" href="https://www.youtube.com/results?search_query=Taylor+Swift+Paper+Rings+official" target="_blank" rel="noopener">♡ Play “Paper Rings”</a>
+  </div>
+  <p class="note">The music button opens the song on YouTube; the song itself isn't bundled into this website.</p>
+</main>
+
+<script>
+const petals = document.querySelectorAll('.petal');
+const message = document.querySelector('#message .msg');
+const photo = document.querySelector('#photo');
+const photos = {};
+const cards = document.querySelectorAll('.memory-card');
+
+petals.forEach((petal, i) => {
+  petal.addEventListener('click', () => {
+    petals.forEach(p => p.classList.remove('active'));
+    petal.classList.add('active');
+    message.textContent = petal.dataset.message;
+    const card = document.querySelector('#card-' + petal.dataset.photo);
+    photo.innerHTML = card ? card.querySelector('.photo').innerHTML : '';
+    window.scrollTo({top: Math.max(0, document.querySelector('#message').offsetTop - 20), behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>
